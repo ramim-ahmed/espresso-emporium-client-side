@@ -1,7 +1,7 @@
 import bannerBackgroundImage from "../assets/banner.png";
 import { Button, Carousel } from "antd";
 export default function Banner() {
-  const contentStyle = {
+  const bannerSliderOneStyle = {
     height: "560px",
     color: "#fff",
     backgroundPosition: "center",
@@ -27,9 +27,12 @@ export default function Banner() {
     backgroundImage: `url("https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?auto=compress&cs=tinysrgb&w=600")`,
   };
   return (
-    <Carousel speed={1500} dotPosition="top">
+    <Carousel autoplay speed={1500} dotPosition="top">
       <div>
-        <div style={contentStyle} className="flex justify-center items-center">
+        <div
+          style={bannerSliderOneStyle}
+          className="flex justify-center items-center"
+        >
           <div className="text-center space-y-3">
             <h1 className="font-rancho text-5xl">
               Would you like a Cup of Delicious Coffee?
