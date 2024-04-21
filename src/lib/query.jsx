@@ -14,11 +14,26 @@ export const fetchSingleProduct = async (id) => {
   return data;
 };
 
-export const addNewProduct = async (id, data) => {
+export const updateProduct = async (id, data) => {
   const res = await fetch(
     `https://espress-emporium-server-side-apis.vercel.app/api/v1/coffees/${id}`,
     {
       method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }
+  );
+  const result = await res.json();
+  return result;
+};
+
+export const addNewProduct = async (data) => {
+  const res = await fetch(
+    "https://espress-emporium-server-side-apis.vercel.app/api/v1/coffees/create-coffee",
+    {
+      method: "POST",
       headers: {
         "Content-Type": "application/json",
       },

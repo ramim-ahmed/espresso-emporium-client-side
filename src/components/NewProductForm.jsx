@@ -1,5 +1,7 @@
+import { addNewProduct } from "@/lib/query";
 import { Button, Input } from "antd";
 import { useState } from "react";
+import toast from "react-hot-toast";
 import { TiDeleteOutline } from "react-icons/ti";
 
 export default function NewProductForm() {
@@ -43,9 +45,14 @@ export default function NewProductForm() {
       taste: tasteName,
       price: Number(priceValue),
       photo: photoUrl,
-      //   ingrediants: usesIngrediants,
+      ingrediants: usesIngrediants,
     };
-    console.log(data);
+    const result = await addNewProduct(data);
+    if (result.success) {
+      toast.success("Add New Coffee Successfully!!👌");
+    } else {
+      toast.error("Add New Coffee failed!");
+    }
   };
 
   return (

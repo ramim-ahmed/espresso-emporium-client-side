@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { addNewProduct } from "@/lib/query";
+import { updateProduct } from "@/lib/query";
 import { Button, Input } from "antd";
 import { useState } from "react";
 import toast from "react-hot-toast";
@@ -59,7 +59,7 @@ export default function UpdateProductForm({ product }) {
       photo: photoUrl,
       ingrediants: usesIngrediants,
     };
-    const result = await addNewProduct(_id, data);
+    const result = await updateProduct(_id, data);
     if (result?.data.modifiedCount > 0) {
       toast.success("Product successfully updated!!! 👍");
     } else {
