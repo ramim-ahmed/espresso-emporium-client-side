@@ -43,3 +43,14 @@ export const addNewProduct = async (data) => {
   const result = await res.json();
   return result;
 };
+
+export const deleteProduct = async (id) => {
+  const res = await fetch(
+    `https://espress-emporium-server-side-apis.vercel.app/api/v1/coffees/${id}`,
+    {
+      method: "DELETE",
+    }
+  );
+  const result = await res.json();
+  return result;
+};
