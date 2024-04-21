@@ -42,12 +42,14 @@ export default function Banner() {
               Get the nostalgia back!! Your companion of every moment!!! <br />
               Enjoy the beautiful moments and make them memorable.
             </p>
-            <Button
-              type="primary"
-              className="rounded-none font-raleway bg-primary text-white"
-            >
-              EXPLORE NOW
-            </Button>
+            <a href="#products">
+              <Button
+                type="primary"
+                className="rounded-none font-raleway bg-primary text-white"
+              >
+                EXPLORE NOW
+              </Button>
+            </a>
           </div>
         </div>
       </div>
@@ -65,12 +67,14 @@ export default function Banner() {
               Get the nostalgia back!! Your companion of every moment!!! <br />
               Enjoy the beautiful moments and make them memorable.
             </p>
-            <Button
-              type="primary"
-              className="rounded-none font-raleway bg-primary text-white"
-            >
-              EXPLORE NOW
-            </Button>
+            <a href="#products">
+              <Button
+                type="primary"
+                className="rounded-none font-raleway bg-primary text-white"
+              >
+                EXPLORE NOW
+              </Button>
+            </a>
           </div>
         </div>
       </div>
@@ -88,12 +92,14 @@ export default function Banner() {
               Get the nostalgia back!! Your companion of every moment!!! <br />
               Enjoy the beautiful moments and make them memorable.
             </p>
-            <Button
-              type="primary"
-              className="rounded-none font-raleway bg-primary text-white"
-            >
-              EXPLORE NOW
-            </Button>
+            <a href="#products">
+              <Button
+                type="primary"
+                className="rounded-none font-raleway bg-primary text-white"
+              >
+                EXPLORE NOW
+              </Button>
+            </a>
           </div>
         </div>
       </div>

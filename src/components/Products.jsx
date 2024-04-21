@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export default function Products({ products }) {
   return (
-    <div className="max-w-6xl mx-auto px-6 py-20">
+    <div id="products" className="max-w-6xl mx-auto px-6 py-20">
       <div className="text-center">
         <p>--- Sip & Savor ---</p>
         <h1 className="font-rancho text-5xl text-primary">

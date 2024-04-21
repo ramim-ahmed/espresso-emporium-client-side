@@ -2,17 +2,19 @@
 import { TiEye } from "react-icons/ti";
 import { MdEditSquare } from "react-icons/md";
 import { RiDeleteBin2Fill } from "react-icons/ri";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { deleteProduct } from "@/lib/query";
 import toast from "react-hot-toast";
 
 export default function Product({ product }) {
   const { _id, name, chef, price, photo } = product;
+  const navigate = useNavigate();
   const handleDeleteCoffee = async () => {
     const confirm = window.confirm("Are you sure want to delete?");
     if (confirm) {
       await deleteProduct(_id);
       toast.success("Coffee has been deleted successfully!!");
+      navigate("/");
     }
   };
   return (

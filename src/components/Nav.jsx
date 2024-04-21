@@ -7,9 +7,11 @@ export default function Nav() {
       style={{ backgroundImage: `url(${navBackgroundImage})` }}
       className="h-20 object-cover object-center flex justify-center items-center"
     >
-      <Link to="/">
-        <img src={logo} className="w-72" alt="" />
-      </Link>
+      <div>
+        <Link to="/">
+          <img src={logo} className="w-72" alt="" />
+        </Link>
+      </div>
     </nav>
   );
 }
